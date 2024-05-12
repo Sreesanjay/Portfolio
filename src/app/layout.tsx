@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 const title = "Sreesanjay S | Full Stack Developer";
 const description =
-     "A self-proclaimed designer who specializes in full stack development (MERN), from Kerala, India.";
-const url = "https://sreesanjay-s-portfolio.vercel.app/";
+     "A Javascript enthusiast, who specializes in full stack development (MERN)., from Kerala, India.";
+const url = "https://sreesanjays.vercel.app/";
 
 export const metadata: Metadata = {
      metadataBase: new URL(url),
