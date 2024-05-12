@@ -47,7 +47,7 @@ const HeroSection = () => {
                   <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
                 </span>
               </div>
-              <Typography>Available for Job or Freelancing</Typography>
+              <Typography>Available for Jobs and Freelancing</Typography>
             </div>
           </div>
           <SocialIcons />
