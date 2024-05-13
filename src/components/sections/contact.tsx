@@ -11,6 +11,7 @@ import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
+import Link from 'next/link';
 
 let email = 'sreesanjaych@gmail.com';
 let phone = '+91 7592928346';
@@ -57,9 +58,9 @@ const ContactSection = () => {
         <div className="flex flex-col items-center md:gap-4">
           <div className="flex items-center gap-4 md:gap-5">
             <Mail className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`mailto:${email}`}> */}
-            <Typography variant="h2">{email}</Typography>
-            {/* </Link> */}
+            <Link href={`mailto:${email}`}>
+            <Typography variant="h3">{email}</Typography>
+            </Link>
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
               onClick={() => handleCopyClick(email, 'email')}
@@ -71,9 +72,9 @@ const ContactSection = () => {
           </div>
           <div className="flex items-center gap-4 md:gap-5">
             <Phone className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
-            <Typography variant="h2">{phone}</Typography>
-            {/* </Link> */}
+            <Link href={`tel:${phone.replace(' ', '')}`}>
+            <Typography variant="h3">{phone}</Typography>
+            </Link>
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
               onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
